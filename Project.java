@@ -1,7 +1,7 @@
 public class Project {
 
     // Attributes
-    int project_number;
+    String project_number;
     String project_name;
     String project_type;
     String address;
@@ -11,7 +11,7 @@ public class Project {
     String deadline;
 
     // Methods constructor
-    public Project(int project_number, String project_name, String project_type, String address, String erf, int total_cost, int cost_owed, String deadline) {
+    public Project(String project_number, String project_name, String project_type, String address, String erf, int total_cost, int cost_owed, String deadline) {
         this.project_number = project_number;
         this.project_name = project_name;
         this.project_type = project_type;
@@ -23,7 +23,7 @@ public class Project {
         
     }
     
-    public Integer project_number() {
+    public String project_number() {
         return project_number;
     }
     public String project_name() {
