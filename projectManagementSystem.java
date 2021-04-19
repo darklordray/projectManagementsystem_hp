@@ -2,7 +2,9 @@ import java.util.Scanner;
 
 public class projectManagementSystem {
     public static void main(String[] args) {
-        
+        Project = new Project();
+        Person = new Person();
+
         //Display options to select for input and changes
 
         Scanner numberInput = new Scanner(System.in);
@@ -18,7 +20,7 @@ public class projectManagementSystem {
             System.out.println("8:\tSave and Quit\n");
             int choice = numberInput.nextInt();
             
-            //Scanner inputs for menu selection and funtion
+            //Scanner inputs for menu selection and function
 
             if (choice == 8) {
                 System.out.println("Shutting down");
@@ -42,7 +44,7 @@ public class projectManagementSystem {
 
                 Scanner cost_owedScanner = new Scanner(System.in);
                 System.out.println("Enter updated cost owing to the project: ");
-                Integer cost_owed = cost_owedScanner.nextLine();
+                Integer cost_owed = Integer.valueOf(cost_owedScanner.nextLine());;
             }
 
             if (choice == 3) {
@@ -56,7 +58,7 @@ public class projectManagementSystem {
 
                 Scanner telephone_numberScanner = new Scanner(System.in);
                 System.out.println("Enter the telephone number of the contractor:");
-                Interger telephone_number = telephone_numberScanner.nextLine();
+                String telephone_number = telephone_numberScanner.nextLine();
 
                 Scanner email_addressScanner = new Scanner(System.in);
                 System.out.println("Enter the email address of the contractor:");
@@ -66,6 +68,12 @@ public class projectManagementSystem {
                 System.out.println("Enter the address of the contractor:");
                 String address = addressScanner.nextLine();
 
+            }
+
+            if (choice == 4) {
+
+                System.out.println(Project.toString());
+                System.out.println(Person.toString());
             }
 
             if (choice == 7) {

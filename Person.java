@@ -3,12 +3,12 @@ public class Person {
     // Attributes
     String title;
     String name;
-    int telephone_number;
+    String telephone_number;
     String email_address;
     String address;
 
     // Methods constructor
-    public Person(String title, String name, int telephone_number, String email_address, String address) {
+    public Person(String title, String name, String telephone_number, String email_address, String address) {
         this.title = title;
         this.name = name;
         this.telephone_number = telephone_number;
@@ -23,7 +23,7 @@ public class Person {
         return name;
     }
 
-    public Integer getTelephone_number() {
+    public String getTelephone_number() {
         return telephone_number;
     }
 

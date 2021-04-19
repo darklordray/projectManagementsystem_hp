@@ -47,6 +47,7 @@ public class Project {
     public String deadline() {
         return deadline;
     }
+
     //toString printing the supplied object
     public String toString() {
         String output = "Project Number: " + project_number;
