@@ -2,8 +2,8 @@ import java.util.Scanner;
 
 public class projectManagementSystem {
     public static void main(String[] args) {
-        Project = new Project();
-        Person = new Person();
+        Person Contractor = new Person(Billy, 021 520 0000, contractor@info.com, 1 Contractors street);
+        Person Architect = new Person(Bobby, 021 650 0000, architect@info.com, 1 architects street);
 
         //Display options to select for input and changes
 
@@ -19,7 +19,7 @@ public class projectManagementSystem {
             System.out.println("7:\tCreate new project:");
             System.out.println("8:\tSave and Quit\n");
             int choice = numberInput.nextInt();
-            
+
             //Scanner inputs for menu selection and function
 
             if (choice == 8) {
@@ -31,27 +31,33 @@ public class projectManagementSystem {
                 Scanner projectNumberScanner = new Scanner(System.in);
                 System.out.println("Enter number of the project that you want to edit: ");
                 String project_number = projectNumberScanner.nextLine();
-                
+
                 Scanner deadlineScanner = new Scanner(System.in);
                 System.out.println("Enter new due date of the project:");
                 String deadline = deadlineScanner.nextLine();
             }
 
-            if (choice == 2){
+            if (choice == 2) {
                 Scanner projectNumberScanner = new Scanner(System.in);
                 System.out.println("Enter number of the project that you want to update");
                 String project_number = projectNumberScanner.nextLine();
 
                 Scanner cost_owedScanner = new Scanner(System.in);
                 System.out.println("Enter updated cost owing to the project: ");
-                Integer cost_owed = Integer.valueOf(cost_owedScanner.nextLine());;
+                Integer cost_owed = Integer.valueOf(cost_owedScanner.nextLine());
+                ;
             }
 
             if (choice == 3) {
                 Scanner titleScanner = new Scanner(System.in);
                 System.out.println("Enter titles of the contractor: ");
+                String contractortitle = titleScanner.nextLine();
+
+                Scanner titleScanner = new Scanner(System.in);
+                System.out.println("Enter titles of the Architech: ");
                 String title = titleScanner.nextLine();
-                
+
+                Person() = new Person(title, )
                 Scanner nameScanner = new Scanner(System.in);
                 System.out.println("Enter the name of the contractor:");
                 String name = nameScanner.nextLine();
@@ -109,7 +115,7 @@ public class projectManagementSystem {
                 System.out.println("Enter the dead line of the project");
                 String deadline = deadlineScanner.nextLine();
             }
-        
+
         }
     }
 }

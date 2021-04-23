@@ -1,15 +1,14 @@
 public class Person {
 
     // Attributes
-    String title;
     String name;
     String telephone_number;
     String email_address;
     String address;
 
     // Methods constructor
-    public Person(String title, String name, String telephone_number, String email_address, String address) {
-        this.title = title;
+    public Person( String name, String telephone_number, String email_address, String address) {
+        
         this.name = name;
         this.telephone_number = telephone_number;
         this.email_address = email_address;
@@ -37,7 +36,6 @@ public class Person {
 
     //toString printing the supplied object
     public String toString() {
-        String output = "Title: " + title;
         output += "\n:Name" + name;
         output += "\n:Telephone Number" + telephone_number;
         output += "\n:email_address" + email_address;
@@ -46,4 +44,8 @@ public class Person {
         return output;
     }
 
+    //Method to Update details
+    public void updateTitle(String updateTitle) {
+        this.title = updateTitle;
+    
 }
