@@ -1,6 +1,6 @@
 # Project Management system
 
-Project managment system built using java.
+Project managment system built using java and mysql:
 
 #### Purpose
 "Poised" stores the following information for each project that they work on:
