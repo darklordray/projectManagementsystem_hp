@@ -51,13 +51,13 @@ database.
 * Update information about existing projects.
 * Finalise existing projects. When a project is finalised the following
 should happen:
-** An invoice should be generated for the client. This invoice
+* An invoice should be generated for the client. This invoice
 should contain the customer’s contact details and the total
 amount that the customer must still pay. This amount is
 calculated by subtracting the total amount paid to date from
 the total fee for the project. If the customer has already paid
 the full fee, an invoice should not be generated.
-** The project should be marked as “finalised” and the
+* The project should be marked as “finalised” and the
 completion date should be added.
 
 
