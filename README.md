@@ -42,7 +42,8 @@ generated.
 * Find and select a project by entering either the project number or project
 name.
 
-###Final addition to the project:
+### Final addition to the project:
+
 The program is able to:
 * Read and writes data about projects and people associated with
 projects from your database. 
